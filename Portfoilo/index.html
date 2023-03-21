@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<style>
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Basic styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background-color:#0BD0F3;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f00;
+}
+
+section {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project {
+  display: grid;
+background-color:#F30B0B
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  
+}
+
+.project h3 {
+  grid-column: 1 / -1;
+
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1>PARADARAMI BHARGAV REDDY</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>My slef Paradarami Bhargav Reddy ,3rd Year Btech CSE Department in Narayana Engineering College Gudur <br> <h2> My Skills </h2>  PYTHON  <br> HTML <br> DATA STRUCTURES BY USING PYTHON.
+<br> <h2>ADDITIONAL SKILLS</h2> Active listening<br> 
+Self – Learning<br> 
+ Team player</p>
+		</section>
+		<section id="projects">
+			<h2>My Projects</h2>
+			<div class="project">
+				<h3>PASSIVITY DETECTION SYSTEM</h3>
+				<p>A Countless number of accidents happen every where to prevent and keep the driver alert, we worked on providing an alarm to driver to wake him up with help of CV2, Keras, tensor flow and python.<br>
+Worked on, CV2 to record the user screen and understand his passivity.<br>
+ Worked on, Collecting the different kinds of images and feeding the algorithm to 
+improve the efficiency.<br>
+ Worked on, testing various scenarios and identified bugs.<br>
+ Exposed to working as a team together.<br>
+ Learned working on tools like Anaconda Navigator, Spyder, and GIT <br>
+Environment: Python, TensorFlow, OpenCV, GIT</p>
+			</div>
+			<!-- Repeat the project div for each project -->
+		</section>
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<p>Email: bhargavreddyparadarami@gmail.com</p>
+			<p>Social Media Links: <a href="https://www.facebook.com">Facebook</a>, <a href="https://www.twitter.com">Twitter</a></p>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright &copy; My Name</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
